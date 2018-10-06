@@ -1,21 +1,24 @@
-<div class="container-fluid">
+<div class="container-fluid center" style="margin-top: 200px">
   <div id="login-form">
-    <form #loginForm="ngForm">
+    <h1 id="top-text">TW-Shop</h1>
+    <form>
       <div class="form-group">
-        <label for="username">Username</label>
-        <input type="text" class="form-control" id="username" required [(ngModel)]="model.username" name="username"
+        <label>Username</label>
+        <input type="text" class="form-control col-md-3 col-sm-2" id="username" required [(ngModel)]="model.username" name="username"
                #username="ngModel">
         <div [hidden]="username.valid || username.untouched" class="alert alert-danger">Username is required!</div>
       </div>
 
       <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" required [(ngModel)]="model.password" name="password"
+        <label>Password</label>
+        <input type="password" class="form-control col-md-3 col-sm-2" id="password" required [(ngModel)]="model.password" name="password"
                #password="ngModel">
         <div [hidden]="password.valid || password.untouched" class="alert alert-danger">Password is required!</div>
       </div>
 
-      <button type="submit" class="btn btn-success" (click)="onLogIn()">Log In</button>
+      <button type="submit" class="btn btn-custom col-md-5 float-left" (click)="onLogIn()">Log In</button>
+      <button type="button" class="btn btn-success col-md-5 float-right" routerLink="/register">Register</button>
+
     </form>
   </div>
 </div>

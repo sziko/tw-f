@@ -1,15 +1,43 @@
-@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
 
-.ng-valid[required], .ng-valid.required  {
-  border-left: 5px solid #42A948; /* green */
-}
-
-.ng-invalid:not(form)  {
-  border-left: 5px solid #a94442; /* red */
+#top-text {
+  text-align: center;
+  color: #42A948;
+  margin-bottom: 32px;
 }
 
 #login-form {
   margin: auto;
-  width: 200px;
-  height: 400px;
+  padding: 100px;
+}
+
+.btn-custom {
+  color: #42A948;
+  outline: none !important;
+  background-color: lightgray;
+  margin-top: 16px;
+  float: left;
+}
+
+.btn-custom:active {
+  color: white;
+  background-color: #42A948;
+  outline: none !important;
+}
+
+.btn-success {
+  outline: none !important;
+  margin-top: 16px;
+  float: right;
+}
+
+.btn-success:active {
+  color: #42A948;
+  background-color: lightgray;
+  outline: none !important;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #42A948;
 }
