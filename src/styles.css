@@ -1,2 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+
+
+#top-text {
+  text-align: center;
+  color: #42A948;
+  margin-bottom: 32px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#login-form {
+  margin: auto;
+  padding: 50px 100px 100px;
+  position: center;
+}
+
+.btn-custom {
+  color: #42A948;
+  outline: none !important;
+  background-color: lightgray;
+  margin-top: 16px;
+}
+
+.btn-custom:active {
+  color: white;
+  background-color: #42A948;
+  outline: none !important;
+}
+
+.btn-success {
+  outline: none !important;
+  margin-top: 16px;
+  float: right;
+}
+
+.btn-success:active {
+  color: #42A948;
+  background-color: lightgray;
+  outline: none !important;
+}
+
+.center {
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+}
+
+.shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  background: white;
+}
+
+body{background: #79C879}
+
+.toolbar-label {
+  font-size: 25pt;
+  font-family: 'Permanent Marker', cursive;
+  color: #42A948;
+}
+
