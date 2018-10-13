@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
 
-
 #top-text {
   text-align: center;
   color: #42A948;
@@ -55,11 +54,24 @@
   background: white;
 }
 
-body{background: #79C879}
+body {
+  background: #79C879;
+  margin: 0;
+  padding: 0;
+}
 
 .toolbar-label {
   font-size: 25pt;
   font-family: 'Permanent Marker', cursive;
   color: #42A948;
 }
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
 
