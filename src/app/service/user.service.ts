@@ -16,16 +16,16 @@ const httpOptions = {
 })
 export class UserService {
 
-  private url = '';
+  private url = 'api/v1';
 
   constructor(private http: HttpClient) {
   }
 
   public register(user: User): Observable<Response> {
-    return this.http.post<Response>(this.url, user, httpOptions);
+    return this.http.post<Response>(this.url + '/user/register', user, httpOptions);
   }
 
   public login(userDto: UserDto): Observable<Response> {
-    return this.http.post<Response>(this.url, userDto, httpOptions);
+    return this.http.post<Response>(this.url + '/user/login', userDto, httpOptions);
   }
 }
